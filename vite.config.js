@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import path, { dirname } from 'path'
-import { config } from 'process'
+import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -14,10 +13,9 @@ export default defineConfig({
     },
   },
   plugins: [vue()],
+  
+  server: { 
+    host: '192.168.0.59'
+  } 
 })
-// module.exports = {
-//   chainWebpack : config => {
-//     configplugins.delete('prefetch');
-//   }
-// };
 
