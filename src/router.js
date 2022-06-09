@@ -8,7 +8,43 @@ import ClassBinding from '/@components/ClassBinding.vue'
 import List from '/@components/ListEx.vue'
 import RenederingGrammer from '/@components/RenderingGrammer.vue'
 import AxiosEX from '/@components/AxiosEx.vue'
+import EventEX from '/@components/EventEx.vue'
+import ComputedEx from '/@components/ComputedEx.vue'
+import WatchEx from '/@components/WatchEx.vue'
+import Search from '/@components/Search.vue'
+import Save from '/@components/Save.vue'
+import Server from '/@components/Server.vue'
 const routes = [
+  {
+    path: '/save',
+    name: 'Save',
+    component: Save,
+  },
+  {
+    path: '/server',
+    name: 'Server',
+    component: Server,
+  },
+  {
+    path: '/search',
+    name: 'Search',
+    component: Search,
+  },
+  {
+    path: '/watchEx',
+    name: 'watchEx',
+    component: WatchEx,
+  },
+  {
+    path: '/computedEx',
+    name: 'ComputedEx',
+    component: ComputedEx,
+  },
+  {
+    path: '/eventEx',
+    name: 'EventEX',
+    component: EventEX,
+  },
   {
     path: '/axiosEx',
     name: 'AxiosEX',

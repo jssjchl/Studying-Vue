@@ -11,8 +11,14 @@
     <router-link to="/classBinding">ClassDataBindeing</router-link> |
     <router-link to="/list">List </router-link> |
     <router-link to="/rendering">Rendering </router-link> |
-    <router-link to="/axiosEx">Axios </router-link>
+    <router-link to="/axiosEx">Axios </router-link> |
+    <router-link to="/eventEx">Event </router-link> |
+    <router-link to="/computedEx">Computed </router-link> |
+    <router-link to="/watchEx">WatchEx </router-link> |
+    <router-link to="/save">UserSave </router-link> |
+    <router-link to="/server">ServerData </router-link> 
   </div>
+  <hr>
   <router-view />
   <!-- router에서 찾은 컴포넌트가 표시될 위치 -->
 </template>
