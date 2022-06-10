@@ -14,11 +14,57 @@ import WatchEx from '/@components/WatchEx.vue'
 import Search from '/@components/Search.vue'
 import Save from '/@components/Save.vue'
 import Server from '/@components/Server.vue'
+import Provide from '/@components/ProvideInject.vue'
 const routes = [
+  {
+    path: '/comApi4',
+    name: 'comApi4',
+    component: () => import('/@components/CompositionAPI4.vue'),
+  },
+  {
+    path: '/comApi3',
+    name: 'comApi3',
+    component: () => import('/@components/CompositionAPI3.vue'),
+  },
+  {
+    path: '/comApi2',
+    name: 'comApi2',
+    component: () => import('/@components/CompositionAPI2.vue'),
+  },
+  {
+    path: '/comApi',
+    name: 'comApi',
+    component: () => import('/@components/CompositionAPI.vue'),
+  },
+  {
+    path: '/cal',
+    name: 'Cal',
+    component: () => import('/@components/Calculator.vue'),
+  },
+  {
+    path: '/mixIn',
+    name: 'Mixin',
+    component: () => import('/@components/MixinTest.vue'),
+  },
+  {
+    path: '/provide',
+    name: 'Provide',
+    component: Provide,
+  },
   {
     path: '/save',
     name: 'Save',
     component: Save,
+  },
+  {
+    path: '/slot',
+    name: 'SlotUseModalLayout',
+    component: () => import('/@components/SlotUseModalLayout.vue'),
+  },
+  {
+    path: '/sync',
+    name: 'Sync',
+    component: () => import('/@components/SyncEx.vue'),
   },
   {
     path: '/server',

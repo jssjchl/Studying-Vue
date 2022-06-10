@@ -16,7 +16,9 @@
     <router-link to="/computedEx">Computed </router-link> |
     <router-link to="/watchEx">WatchEx </router-link> |
     <router-link to="/save">UserSave </router-link> |
-    <router-link to="/server">ServerData </router-link> 
+    <router-link to="/server">ServerData </router-link>  |
+    <router-link to="/sync">동기화 </router-link>  |
+    <router-link to="/provide">Inject </router-link> | 
   </div>
   <hr>
   <router-view />
