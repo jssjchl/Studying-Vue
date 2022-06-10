@@ -15,7 +15,23 @@ import Search from '/@components/Search.vue'
 import Save from '/@components/Save.vue'
 import Server from '/@components/Server.vue'
 import Provide from '/@components/ProvideInject.vue'
+import StorAccess from '/@components/StoreAcces.vue'
 const routes = [
+  {
+    path: '/store',
+    name: 'StorAccess',
+    component: StorAccess,
+  },
+  {
+    path: '/provideApi',
+    name: 'provideApi',
+    component: () => import('/@components/CompositionAPIProvide.vue'),
+  },
+  {
+    path: '/plugins',
+    name: 'plugins',
+    component: () => import('/@components/Plugins.vue'),
+  },
   {
     path: '/comApi4',
     name: 'comApi4',
@@ -24,7 +40,7 @@ const routes = [
   {
     path: '/comApi3',
     name: 'comApi3',
-    component: () => import('/@components/CompositionAPI3.vue'),
+    component: () => import('/@components/CompositionAPI3.vue'),  
   },
   {
     path: '/comApi2',
