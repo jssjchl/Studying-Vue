@@ -45,22 +45,22 @@ const routes = [
   {
     path: '/comApi2',
     name: 'comApi2',
-    component: () => import('/@components/CompositionAPI2.vue'),
+    component: () => import(/* webpackChunkName: comApi2 */'/@components/CompositionAPI2.vue'),
   },
   {
     path: '/comApi',
     name: 'comApi',
-    component: () => import('/@components/CompositionAPI.vue'),
+    component: () => import(/* webpackChunkName: comApi */'/@components/CompositionAPI.vue'),
   },
   {
     path: '/cal',
     name: 'Cal',
-    component: () => import('/@components/Calculator.vue'),
+    component: () => import(/* webpackChunkName: Cal */'/@components/Calculator.vue'),
   },
   {
     path: '/mixIn',
     name: 'Mixin',
-    component: () => import('/@components/MixinTest.vue'),
+    component: () => import(/* webpackChunkName: Mixin */'/@components/MixinTest.vue'),
   },
   {
     path: '/provide',
@@ -75,12 +75,12 @@ const routes = [
   {
     path: '/slot',
     name: 'SlotUseModalLayout',
-    component: () => import('/@components/SlotUseModalLayout.vue'),
+    component: () => import(/* webpackChunkName: SlotUseModalLayout */ '/@components/SlotUseModalLayout.vue'),
   },
   {
     path: '/sync',
     name: 'Sync',
-    component: () => import('/@components/SyncEx.vue'),
+    component: () => import(/* webpackChunkName: Sync */ '/@components/SyncEx.vue'),
   },
   {
     path: '/server',
@@ -145,7 +145,7 @@ const routes = [
   {
     path: '/test',
     name: 'Test',
-    component: () => import('/@components/Test.vue'),
+    component: () => import(/* webpackChunkName: Test */'/@components/Test.vue'),
   },
   {
     path: '/contact',
